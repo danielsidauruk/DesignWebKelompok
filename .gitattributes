@@ -1,2 +1,8 @@
 # Auto detect text files and perform LF normalization
-* text=auto
+<ul id="simple">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Login</a></li>
+    <li class="active"><a href="#">Contact</a></li>
+    <li><a href="#">About</a></li>
+    << >> 
+</ul>
