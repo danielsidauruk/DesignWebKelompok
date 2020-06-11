@@ -1,3 +1,287 @@
 <!DOCTYPE html>
-<p>duar mmq</p>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Favorite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+        background: #17181c;
+      }
+
+      header{
+        position: fixed;
+        background: #22242A;
+        padding: 15px;
+        width: 100%;
+        height: 30px;
+        z-index: 2;
+      }
+
+      header .logo h3{
+        color: #fff;
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 900;
+        left: 300px;
+        padding-left: 50px;
+      }
+
+      header .logo span{
+        color: #19B3D3;
+      }
+
+      header .search_box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 500px;
+        transform: translate(-50%, -50%);
+      }
+
+      header .search_box input{
+        position: relative;
+        display: inline-block;
+        font-size: 15px;
+        box-sizing: border-box;
+        transition: .5s;
+      }
+
+      header .search_box input[type="text"]{
+        background: #fff;
+        width: 340px;
+        height: 30px;
+        border: none;
+        outline: none;
+        padding: 0 25px;
+        border-radius: 25px 0 0 25px;
+      }
+
+      header .search_box input[type="submit"]{
+        position: relative;
+        left: -5px;
+        border-radius: 0 25px 25px 0;
+        width: 80px;
+        height: 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: #00B894;
+        color: #fff;
+      }
+
+      header .search_box input[type="submit"]:hover{
+        background: #19B3D3;
+      }
+
+      header .account_btn a{
+        position: absolute;
+        top: 50%;
+        left: 95%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+      }
+
+      .sidebar{
+        background: #2f323a;
+        margin-top: 60px;
+        padding-top: 25px;
+        position: fixed;
+        left: 0;
+        width: 163px;
+        height: 100%;
+        transition: 0.5s;
+        transition-property: left;
+        z-index: 2;
+      }
+
+      .sidebar a{
+        color: #fff;
+        display: block;
+        width: 100%;
+        line-height: 60px;
+        text-decoration: none;
+        padding-left: 40px;
+        box-sizing: border-box;
+        transition: 0.5s;
+        transition-property: background;
+      }
+
+      .sidebar a:hover{
+        background: #19B3D3;
+      }
+
+      .sidebar i{
+        padding-right: 10px;
+      }
+
+      label #sidebar_btn{
+        z-index: 1;
+        color: #fff;
+        position: fixed;
+        cursor: pointer;
+        font-size: 20px;
+        margin: 5px 0;
+        transition: 0.5s;
+        transition-property: color;
+      }
+
+      label #sidebar_btn:hover{
+        color: #19B3D3;
+      }
+
+      #check:checked ~ .sidebar{
+        left: -190px;
+      }
+
+      #check:checked ~ .sidebar a span{
+        display: none;
+      }
+
+      #check:checked ~ .sidebar a{
+        font-size: 20px;
+        margin-left: 170px;
+        width: 80px;
+      }
+
+      .content{
+        margin-left: 250px;
+        background: url(background.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        transition: 0.5s;
+      }
+
+      #check:checked ~ .content{
+        margin-left: 60px;
+      }
+
+      #check{
+        display: none;
+      }
+
+      footer {
+        text-align: center;
+        background-color: #2f323a;
+        color: #fff;
+        padding: 1px;
+        position: bottom;
+        bottom: 0;
+        width: 100%;
+        z-index: 1;
+      }
+
+      .container{
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        z-index: 1; 
+      }
+
+      .container ul{
+        padding: 0px;
+        margin: 0px;
+      }
+
+
+      .container ul li{
+        float: left;
+        list-style: none;
+        width: 20%;
+        height: 300px;
+        background: white;
+        margin: 20px 0px 20px 55px; 
+        border: 2px solid #19B3D3;
+        box-sizing: border-box;
+      }
+
+      .container ul li:hover{
+        opacity: 0.8;
+      }
+
+      .container ul li .bottom{
+        width: 100%;
+        height:55px;
+        line-height: 50px;
+        background: #19B3D3;    
+        text-align: center;
+        color:white;
+        font-size: 20px;
+       
+      }
+
+@media screen and (max-width:1250px){
+    .container ul li{
+        width:40%;
+        margin-left: 40px;
+         
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+
+      <div class="logo">
+        <h3>Mikro<span>Shop</span></h3>
+      </div>
+      
+      <!--search box start--> 
+      <div class="search_box">
+        <form>
+          <input type="text" name="" value="" placeholder="Type...">
+          <input type="submit" name="" value="Search">
+      </form>
+      </div>
+      <!--search box end-->
+
+    <!--account button start-->
+    <div class="account_btn">
+      <a href="login.html"><i class="fas fa-user-circle fa-2x"></i></a>
+    </div>
+    <!--account button end-->
+    </header>
+    <!--header area end-->
+
+    <!--sidebar start-->
+    <div class="sidebar">
+      <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="discount.html"><i class="fas fa-percentage"></i><span>Discount</span></a>
+      <a href="favorite.html"><i class="fas fa-certificate"></i></i><span>Favorite</span></a>
+
+    </div>
+    <!--sidebar end-->
+
+    <div class="content">
+      <div class="container">
+        <ul>
+            <li> <div class="bottom">Heading</div> </li>
+            <li> <div class="bottom">Heading</div> </li>
+            <li> <div class="bottom">Heading</div> </li>
+            <li> <div class="bottom">Heading</div> </li>
+            <li> <div class="bottom">Heading</div> </li>
+            <li> <div class="bottom">Heading</div> </li>
+            <li> <div class="bottom">Heading</div> </li>
+            <li> <div class="bottom">Heading</div> </li>
+            
+        </ul>
+    </div>
+    </div>
+  </body>
+  <footer>
+  <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script>, Mikroshop</p>
+</footer>
 </html>
