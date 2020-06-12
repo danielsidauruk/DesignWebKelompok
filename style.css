@@ -284,6 +284,11 @@ header .menu-toggle {
 	font-size: .8em;
 }
 
+.content .main-content .post .post-preview p i {
+	color: #d3d3d3;
+	font-size: .9em;
+}
+
 .content .main-content .post .preview-text {
 	line-height: 1.5em;
 	font-size: 1.03em;
