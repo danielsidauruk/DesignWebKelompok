@@ -223,6 +223,32 @@ header .menu-toggle {
 	height: 130px;
 	padding: 0px 5px;
 }
+.post-slider .card-body{
+		background-color: #2f323a;
+		font-size: 1.03em;
+		color: #d3d3d3;	
+		padding-bottom: 30px;	
+		border-collapse: collapse;
+}
+.post-slider .card-body .buy{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	border: 1px solid #19B3D3;
+	background: transparent;
+	border-radius: 0px;
+	color: #19B3D3 !important;
+}
+.post-slider .card-body .buy:hover{
+	background: #19B3D3;
+	color: white !important;
+	transition: .25s;
+}
+.post-slider .card{
+	border-collapse: collapse;
+	padding-bottom: 30px;
+	background-color:  #17181c;
+}
 
 .post-slider .post-wrapper .post .slider-image {
 	width: 100%;
