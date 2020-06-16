@@ -1,293 +1,230 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Discount</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <style>
-      body{
-        margin: 0;
-        padding: 0;
-        font-family: "Roboto", sans-serif;
-        background: #17181c;
-      }
+<html lang="en">
 
-      header{
-        position: fixed;
-        background: #22242A;
-        padding: 15px;
-        width: 100%;
-        height: 30px;
-        z-index: 2;
-      }
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      header .logo h3{
-        color: #fff;
-        margin: 0;
-        text-transform: uppercase;
-        font-size: 22px;
-        font-weight: 900;
-        left: 300px;
-        padding-left: 50px;
-      }
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-      header .logo span{
-        color: #19B3D3;
-      }
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
 
-      header .search_box{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 500px;
-        transform: translate(-50%, -50%);
-      }
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
 
-      header .search_box input{
-        position: relative;
-        display: inline-block;
-        font-size: 15px;
-        box-sizing: border-box;
-        transition: .5s;
-      }
+	<!-- Custom Styling CSS -->
+	<link rel="stylesheet" href="style.css">
+	<style>
+		.post-slider .favorite .row .col-md-4 .card .card-title{
+			background-color: #2f323a;
+		}
+	</style>
 
-      header .search_box input[type="text"]{
-        background: #fff;
-        width: 340px;
-        height: 30px;
-        border: none;
-        outline: none;
-        padding: 0 25px;
-        border-radius: 25px 0 0 25px;
-      }
+	<title>favorite</title>
+</head>
 
-      header .search_box input[type="submit"]{
-        position: relative;
-        left: -5px;
-        border-radius: 0 25px 25px 0;
-        width: 80px;
-        height: 30px;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        background: #00B894;
-        color: #fff;
-      }
+<body>
+	<header>
+		<div class="logo">
+			<h1 class="logo-text"><span>MIKRO</span>SHOP</h1>
+		</div>
+		<i class="fa fa-bars menu-toggle"></i>
+		<ul class="nav">
+			 <li><a href="home.html">Home</a></li>
+			 <li><a href="favorite.html">Favorite</a></li>
+			 <li><a href="discount.html">Discount</a></li>
+			 <!-- <li><a href="#">Sign Up</a></li>
+			 <li><a href="#">Login</a></li> -->
+			 <li>
+			 	<a href="#">
+					 <i class="fa fa-user"></i>
+					 Login
+			 		<i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+			 	</a>
+			 	<ul>
+			 		<li><a href="#">Dashboard</a></li>
+			 		<li><a href="Login.html" class="logout">Logout</a></li>
+			 	</ul>
+			 </li>
+		</ul>
+	</header>
 
-      header .search_box input[type="submit"]:hover{
-        background: #19B3D3;
-      }
+		<!-- Post Slider -->
+		<div class="post-slider">
+			<h1 class="slider-title">Favorite</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="bsphone3profav.jpg" class="card-img-top" alt="Xiamo Black Shark 3 Pro">
+                            <div class="card-body">
+                                <h5><a href="single.html">Xiaomi Black Shark 3 Pro</a></h5>
+                                <i class="fas fa-mobile-alt"> Xiaomi</i>
+                                <br>
+								<i class="fas fa-"> Rp 7.999.000</i>
+								<br>
+								<br>
+								<a href="#" class="btn read-more">Buy</a>
+								&nbsp;
+								<a href="#" class="btn read-more">Add To Chart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="bsphone3profav.jpg" class="card-img-top" alt="Xiamo Black Shark 3 Pro">
+                            <div class="card-body">
+                                <h5><a href="single.html">Xiamo Black Shark 3 Pro</a></h5>
+                                <i class="fas fa-mobile-alt"> Xiaomi</i>
+                                <br>
+								<i class="fas fa-"> Rp 7.999.000</i>
+								<br>
+								<br>
+								<a href="#" class="btn read-more">Buy</a>
+								&nbsp;
+								<a href="#" class="btn read-more">Add to Chart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="bsphone3profav.jpg" class="card-img-top" alt="Xiamo Black Shark 3 Pro">
+                            <div class="card-body">
+                                <h5><a href="fas fa-mobile-alt">Xiamo Black Shark 3 Pro</a></h5>
+                                <i class="far fa-user"> Xiaomi</i>
+                                <br>
+								<i class="fas fa-"> Rp 7.999.000</i>
+								<br>
+								<br>
+								<a href="#" class="btn read-more">Buy</a>
+								&nbsp;
+								<a href="#" class="btn read-more">Add to Chart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      header .account_btn a{
-        position: absolute;
-        top: 50%;
-        left: 95%;
-        transform: translate(-50%, -50%);
-        color: #fff;
-      }
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="bsphone3profav.jpg" class="card-img-top" alt="Xiamo Black Shark 3 Pro">
+                            <div class="card-body">
+                                <h5><a href="fas fa-mobile-alt">Xiamo Black Shark 3 Pro</a></h5>
+                                <i class="far fa-user"> Xiaomi</i>
+                                <br>
+								<i class="fas fa-"> Rp 7.999.000</i>
+								<br>
+								<br>
+								<a href="#" class="btn read-more">Buy</a>
+								&nbsp;
+								<a href="#" class="btn read-more">Add to Chart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="bsphone3profav.jpg" class="card-img-top" alt="Xiamo Black Shark 3 Pro">
+                            <div class="card-body">
+                                <h5><a href="single.html">Xiamo Black Shark 3 Pro</a></h5>
+                                <i class="fas fa-mobile-alt"> Xiaomi</i>
+                                <br>
+								<i class="fas fa-"> Rp 7.999.000</i>
+								<br>
+								<br>
+								<a href="#" class="btn read-more">Buy</a>
+								&nbsp;
+								<a href="#" class="btn read-more">Add to Chart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="bsphone3profav.jpg" class="card-img-top" alt="Xiamo Black Shark 3 Pro">
+                            <div class="card-body">
+                                <h5><a href="fas fa-mobile-alt">Xiamo Black Shark 3 Pro</a></h5>
+                                <i class="far fa-user"> Xiaomi</i>
+                                <br>
+								<i class="fas fa-"> Rp 7.999.000</i>
+								<br>
+								<br>
+								<a href="#" class="btn read-more">Buy</a>
+								&nbsp;
+								<a href="#" class="btn read-more">Add to Chart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-      .sidebar{
-        background: #2f323a;
-        margin-top: 60px;
-        padding-top: 30px;
-        position: fixed;
-        left: 0;
-        width: 163px;
-        height: 100%;
-        transition: 0.5s;
-        transition-property: left;
-        z-index: 2;
-      }
+<div class="footer">
+		<div class="footer-content">
 
-      .sidebar a{
-        color: #fff;
-        display: block;
-        width: 100%;
-        line-height: 60px;
-        text-decoration: none;
-        padding-left: 40px;
-        box-sizing: border-box;
-        transition: 0.5s;
-        transition-property: background;
-      }
+			<div class="footer-section about">
+				<h1 class="logo-text"><span>MIKRO</span>SHOP</h1>
+				<p>
+					Website ini dibuat hanya untuk tugas akhir Kuliah
+				</p>
+				<div class="contact">
+					<span><i class="fas fa-phone"></i> &nbsp; 081229766833</span>
+					<span><i class="fas fa-envelope"></i> &nbsp; tommychristian24@gmail.com</span>
+				</div>
+				<div class="socials">
+					<a href="#"><i class="fab fa-facebook"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
 
-      .sidebar a:hover{
-        background: #19B3D3;
-      }
+			<div class="footer-section links">
+				<h2>Quick Links</h2>
+				<br>
+				<ul>
+					<a href="#">
+						<li>Events</li>
+					</a>
+					<a href="#">
+						<li>Teams</li>
+					</a>
+					<a href="#">
+						<li>Terms and Conditions</li>
+					</a>
+				</ul>	
+			</div>
 
-      .sidebar i{
-        padding-right: 10px;
-      }
+			<div class="footer-section contact-form">
+				<h2>Contact us</h2>
+				<br>
+				<form action="homt.html" method="post">
+					<input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+					<textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+					<button type="submit" class="btn btn-big contact-btn">
+						<i class="fas fa-envelope"></i>
+						Send
+					</button>
+				</form>
+			</div>
+		</div>
 
-      label #sidebar_btn{
-        z-index: 1;
-        color: #fff;
-        position: fixed;
-        cursor: pointer;
-        font-size: 20px;
-        margin: 5px 0;
-        transition: 0.5s;
-        transition-property: color;
-      }
+		<div class="footer-bottom">
+			Copyright &copy; 2020 | MIKROSHOP
+		</div>
+	</div>
+	<!-- // Footer -->
 
-      label #sidebar_btn:hover{
-        color: #19B3D3;
-      }
+	<!-- JQuerry -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-      #check:checked ~ .sidebar{
-        left: -190px;
-      }
+	<!-- Slick Carousel -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-      #check:checked ~ .sidebar a span{
-        display: none;
-      }
+	<!-- Custom JavaScript -->
+	<script src="scripts.js"></script>
 
-      #check:checked ~ .sidebar a{
-        font-size: 20px;
-        margin-left: 170px;
-        width: 80px;
-      }
+ 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
 
-      .content{
-        margin-left: 250px;
-        background: url(background.png) no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 100vh;
-        transition: 0.5s;
-      }
-
-      #check:checked ~ .content{
-        margin-left: 60px;
-      }
-
-      #check{
-        display: none;
-      }
-
-      footer {
-        text-align: center;
-        background-color: #2f323a;
-        color: #fff;
-        padding: 1px;
-        position: bottom;
-        bottom: 0;
-        width: 100%;
-        z-index: 1;
-      }
-
-      .container{
-        position: absolute;
-        top: 50%;
-        left: 55%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-        z-index: 1; 
-      }
-
-      .container ul{
-        padding: 0px;
-        margin: 0px;
-      }
-
-
-      .container ul li{
-        float: left;
-        list-style: none;
-        width: 20%;
-        height: 300px;
-        background: white;
-        margin: 20px 0px 20px 55px; 
-        border: 2px solid #19B3D3;
-        box-sizing: border-box;
-      }
-
-      .container ul li:hover{
-        opacity: 0.8;
-      }
-
-      .container ul li .bottom{
-        width: 100%;
-        height:55px;
-        line-height: 50px;
-        background: #19B3D3;    
-        text-align: center;
-        color:white;
-        font-size: 20px;
-       
-      }
-
-@media screen and (max-width:1250px){
-    .container ul li{
-        width:40%;
-        margin-left: 40px;
-         
-    }
-
-    </style>
-  </head>
-
-  <body>
-    <input type="checkbox" id="check">
-    <!--header area start-->
-    <header>
-      <label for="check">
-        <i class="fas fa-bars" id="sidebar_btn"></i>
-      </label>
-
-      <div class="logo">
-        <h3>Mikro<span>Shop</span></h3>
-      </div>
-      
-      <!--search box start--> 
-      <div class="search_box">
-        <form>
-          <input type="text" name="" value="" placeholder="Type...">
-          <input type="submit" name="" value="Search">
-      </form>
-      </div>
-      <!--search box end-->
-
-    <!--account button start-->
-    <div class="account_btn">
-      <a href="login.html"><i class="fas fa-user-circle fa-2x"></i></a>
-    </div>
-    <!--account button end-->
-    </header>
-    <!--header area end-->
-
-    <!--sidebar start-->
-    <div class="sidebar">
-      <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
-      <a href="discount.html"><i class="fas fa-percentage"></i><span>Discount</span></a>
-      <a href="favorite.html"><i class="fas fa-certificate"></i></i><span>Favorite</span></a>
-
-    </div>
-    <!--sidebar end-->
-
-    <div class="content">
-      <div class="container">
-        <ul>
-            <li> <div class="bottom">Heading</div> </li>
-            <li> <div class="bottom">Heading</div> </li>
-            <li> <div class="bottom">Heading</div> </li>
-            <li> <div class="bottom">Heading</div> </li>
-            <li> <div class="bottom">Heading</div> </li>
-            <li> <div class="bottom">Heading</div> </li>
-            <li> <div class="bottom">Heading</div> </li>
-            <li> <div class="bottom">Heading</div> </li>
-            
-        </ul>
-    </div>
-    </div>
-
-    
-
-  </body>
-  <footer>
-  <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script>, MIKROSHOP</p>
-</footer>
 </html>
-
-
-                           
