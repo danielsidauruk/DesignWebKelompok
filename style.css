@@ -209,7 +209,7 @@ header .menu-toggle {
 }
 
 .post-slider .post-wrapper .post {
-	height: 300px;
+	height: 330px;
 	width: 330px;
 	margin: 0px 10px;
 	display: inline-block;
@@ -220,17 +220,65 @@ header .menu-toggle {
 }
 
 .post-slider .post-wrapper .post .post-info {
+	position: absolute;
 	height: 130px;
 	padding: 0px 5px;
 }
-.post-slider .card-body{
-		background-color: #2f323a;
-		font-size: 1.03em;
-		color: #d3d3d3;	
-		padding-bottom: 30px;	
-		border-collapse: collapse;
+
+.post-slider .post-wrapper .post .post-info .post-chart {
+	position: absolute;
+	bottom: 10px;
+	left: 250px;
+	border: 1px solid #19B3D3;
+	background: transparent;
+	border-radius: 0px;
+	color: #19B3D3 !important;
 }
-.post-slider .card-body .buy{
+
+.post-slider .post-wrapper .post .post-info .post-chart:hover {
+	background: #19B3D3;
+	color: white !important;
+	transition: .25s;
+}
+
+.post-slider .post-wrapper .post .post-info .post-buy {
+	position: absolute;
+	bottom: 10px;
+	left: 335px;
+	border: 1px solid #19B3D3;
+	background: transparent;
+	border-radius: 0px;
+	color: #19B3D3 !important;
+}
+
+.post-slider .post-wrapper .post .post-info .post-buy:hover {
+	background: #19B3D3;
+	color: white !important;
+	transition: .25s;
+}
+
+.post-slider .post-wrapper .post .slider-image {
+	width: 100%;
+	height: 200px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.post-slider .card {
+	border-collapse: collapse;
+	padding-bottom: 30px;
+	background-color:  #17181c;
+}
+
+.post-slider .card-body {
+	background-color: #2f323a;
+	font-size: 1.03em;
+	color: #d3d3d3;	
+	padding-bottom: 30px;	
+	border-collapse: collapse;
+}
+
+.post-slider .card-body .buy {
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
@@ -239,22 +287,11 @@ header .menu-toggle {
 	border-radius: 0px;
 	color: #19B3D3 !important;
 }
-.post-slider .card-body .buy:hover{
+
+.post-slider .card-body .buy:hover {
 	background: #19B3D3;
 	color: white !important;
 	transition: .25s;
-}
-.post-slider .card{
-	border-collapse: collapse;
-	padding-bottom: 30px;
-	background-color:  #17181c;
-}
-
-.post-slider .post-wrapper .post .slider-image {
-	width: 100%;
-	height: 200px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
 }
 
 /* Content */
@@ -276,6 +313,35 @@ header .menu-toggle {
 	color: #d3d3d3;
 }
 
+.content .main-content.single img {
+	height: 350px;
+	width: 300px;
+	float: left;
+	margin-right: 10px;
+}
+
+.content .main-content.single table {
+	width: 60%;
+	border-collapse: collapse;
+	font-size: 1.1rem;
+	margin: 0px;
+	padding: 0px;
+}
+
+.content .main-content.single td {
+	padding: 10px;
+	text-align: left;
+	color: aliceblue;
+	text-align: left;
+	padding: 2px;
+	margin: 2px;
+	font-size: .8em;
+}
+
+.content .main-content.single {
+	font-size: .95em;
+}
+
 .content .main-content.single .post-title {
 	text-align: center;
 	margin-bottom: 40px;
@@ -283,7 +349,7 @@ header .menu-toggle {
 
 .content .main-content .post {
 	width: 95%;
-	height: 270px;
+	height: 310px;
 	margin: 20px auto;
 	border-radius: 5px;
 	background: #2f323a;
@@ -321,7 +387,7 @@ header .menu-toggle {
 	color: #d3d3d3;
 }
 
-.content .main-content .post .read-more {
+.content .main-content .post .read-buy {
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
@@ -331,7 +397,23 @@ header .menu-toggle {
 	color: #19B3D3 !important;
 }
 
-.content .main-content .post .read-more:hover {
+.content .main-content .post .read-buy:hover {
+	background: #19B3D3;
+	color: white !important;
+	transition: .25s;
+}
+
+.content .main-content .post .read-chart {
+	position: absolute;
+	bottom: 10px;
+	right: 80px;
+	border: 1px solid #19B3D3;
+	background: transparent;
+	border-radius: 0px;
+	color: #19B3D3 !important;
+}
+
+.content .main-content .post .read-chart:hover {
 	background: #19B3D3;
 	color: white !important;
 	transition: .25s;
@@ -353,6 +435,23 @@ header .menu-toggle {
 
 .content .main-content .discount-post-title {
 	margin: 20px;
+}
+
+.content .main-content.single .buy {
+	float: right;
+	bottom: 10px;
+	right: 10px;
+	border: 1px solid #19B3D3;
+	background: transparent;
+	border-radius: 0px;
+	color: #19B3D3 !important;
+	margin-top: 20px;
+}
+
+.content .main-content.single .buy:hover {
+	background: #19B3D3;
+	color: white !important;
+	transition: .25s;
 }
 
 .content .sidebar {

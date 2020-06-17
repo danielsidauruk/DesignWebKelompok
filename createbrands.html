@@ -18,7 +18,7 @@
 	<!-- Admin Styling CSS -->
 	<link rel="stylesheet" href="admin.css">
 
-	<title>Admin Section - Manage Users</title>
+	<title>Admin Section - Add Brand</title>
 </head>
 
 <body>
@@ -28,7 +28,6 @@
 		</div>
 		<i class="fa fa-bars menu-toggle"></i>
 		<ul class="nav">
-			<li><a href="home.html">Home</a></li>
 			 <li>
 			 	<a href="#">
 			 		<i class="fa fa-user"></i>
@@ -58,52 +57,28 @@
 		<!-- Admin Content -->
 		<div class="admin-content">
 			<div class="button-group">
-				<a href="createusers.html" class="btn btn-big">Add User</a>
-				<a href="indexusers.html" class="btn btn-big">Manage Users</a>
+				<a href="createtopics.html" class="btn btn-big">Add Brand</a>
+				<a href="indextopics.html" class="btn btn-big">Manage Brands</a>
 			</div>
 
 			<div class="content">
 
-				<h2 class="page-title">Manage Users</h2>
+				<h2 class="page-title">Add Brand</h2>
 
-				<table>
-					<thead>
-						<th>SN</th>
-						<th>Username</th>
-						<th>Role</th>
-						<th colspan="4">Action</th>
-					</thead>
-					<tbody>
-						<tr>
-							<td>1</td>
-							<td>Tommy</td>
-							<td>Admin</td>
-							<td><a href="#" class="edit">Edit</a></td>
-							<td><a href="#" class="delete">Delete</a></td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>Daniel</td>
-							<td>Admin</td>
-							<td><a href="#" class="edit">Edit</a></td>
-							<td><a href="#" class="delete">Delete</a></td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td>Panca</td>
-							<td>Admin</td>
-							<td><a href="#" class="edit">Edit</a></td>
-							<td><a href="#" class="delete">Delete</a></td>
-						</tr>
-						<tr>
-							<td>4</td>
-							<td>Ari</td>
-							<td>Admin</td>
-							<td><a href="#" class="edit">Edit</a></td>
-							<td><a href="#" class="delete">Delete</a></td>
-						</tr>
-					</tbody>
-				</table>
+				<form action="createtopics.html" method="post">
+					<div>
+						<label>Name</label>
+						<input type="text" name="name" class="text-input">
+					</div>
+					<div>
+						<label>Description</label>
+						<texarea name="description" id="body"></texarea>
+					</div>
+
+					<div>
+						<button type="submit" class="btn btn-big">Add Brand</button>
+					</div>
+				</form>
 				
 			</div>
 
@@ -115,6 +90,9 @@
 
 	<!-- JQuerry -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Ckeditor -->
+	<script src="https://cdn.ckeditor.com/ckeditor5/19.1.1/classic/ckeditor.js"></script>
 
 	<!-- Custom JavaScript -->
 	<script src="scripts.js"></script>
